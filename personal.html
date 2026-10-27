@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temirlan Azemkulov | Electrical Engineering Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      background-color: #000000;
+      color: #e4e4e7;
+      font-family: 'Inter', sans-serif;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    /* Subtle PCB-inspired background grid */
+    .circuit-grid {
+      background-image: 
+        radial-gradient(circle at 1px 1px, #1f242d 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+    /* Sharp cards with thin border */
+    .ee-card {
+      background: #09090b;
+      border: 1px solid #27272a;
+      border-radius: 2px;
+    }
+    .ee-card:hover {
+      border-color: #3f3f46;
+    }
+    .ee-btn {
+      background: #18181b;
+      border: 1px solid #3f3f46;
+      border-radius: 2px;
+      transition: all 0.15s ease;
+    }
+    .ee-btn:hover {
+      background: #27272a;
+      border-color: #71717a;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body class="circuit-grid min-h-screen antialiased selection:bg-zinc-800 selection:text-white">
+
+  <!-- TOP STATUS BAR -->
+  <header class="border-b border-zinc-900 bg-black/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between font-mono text-xs text-zinc-400">
+      <div class="flex items-center space-x-2">
+        <span class="text-zinc-200">PERSONAL WEBSITE</span>
+        <span class="text-zinc-600">/</span>
+        <span>BISHKEK, KG</span>
+      </div>
+      <div class="space-x-4">
+        <a href="#projects" class="hover:text-white transition">Projects</a>
+        <a href="#films" class="hover:text-white transition">Films</a>
+        <a href="mailto:temirlanprogram@gmail.com" class="text-zinc-300 hover:text-white transition">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-12 space-y-16">
+
+    <!-- HERO SECTION -->
+    <section class="space-y-4">
+      <h1 class="text-2xl sm:text-3xl font-semibold text-white tracking-tight">
+        Temirlan Azemkulov
+      </h1>
+      <p class="text-zinc-400 text-sm sm:text-base max-w-2xl leading-relaxed">
+        Welcome to my personal website for my best projects and short films.      </p>
+      
+      <div class="flex flex-wrap gap-3 pt-2">
+        <a href="https://github.com/Oriprogram" target="_blank" class="ee-btn px-3 py-1.5 font-mono text-xs text-zinc-300 flex items-center space-x-2">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>github.com/Oriprogram</span>
+        </a>
+        <a href="mailto:temirlanprogram@gmail.com" class="ee-btn px-3 py-1.5 font-mono text-xs text-zinc-300 flex items-center space-x-2">
+          <span>✉ temirlanprogram@gmail.com</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- TECHNICAL PROJECTS -->
+    <section id="projects" class="space-y-6">
+      <div class="border-b border-zinc-800 pb-2 flex items-center justify-between">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-zinc-400">// Hardware & Embedded Projects</h2>
+        <span class="text-xs font-mono text-zinc-500">2 Builds</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- PROJECT 1: AUTOPOT -->
+        <article class="ee-card flex flex-col justify-between p-5 space-y-4">
+          <div class="space-y-3">
+            <!-- Image with clean SVG fallback -->
+            <div class="relative w-full aspect-video bg-zinc-900 border border-zinc-800 overflow-hidden flex items-center justify-center">
+              <img 
+                src="autopot.jpg" 
+                alt="AutoPot System" 
+                class="w-full h-full object-cover"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              >
+              <div class="hidden flex-col items-center justify-center text-zinc-600 font-mono text-xs space-y-1">
+                <span>[autopot.jpg]</span>
+                <span class="text-[10px] text-zinc-700">ESP32 · Soil Sensor · Pump Relay</span>
+              </div>
+            </div>
+
+            <div class="flex items-start justify-between gap-2 pt-1">
+              <div>
+                <h3 class="text-lg font-medium text-white">AutoPot</h3>
+                <p class="text-xs font-mono text-zinc-400">Ultimate smart planter.</p>
+              </div>
+              <span class="text-[10px] font-mono border border-emerald-900/60 bg-emerald-950/30 text-emerald-400 px-1.5 py-0.5">
+                Shipped
+              </span>
+            </div>
+
+            <p class="text-xs text-zinc-400 leading-relaxed">
+              Autonomous smart planter built around an ESP32 board-screen hybrid. Coded in C++ via Arduino IDE. Syncs telemetry to Google Firebase over Wi-Fi, allowing remote soil moisture tracking and pump threshold adjustments from a web dashboard. Features reactive Tamagotchi-style screen states based on soil thirst and touch input.
+            </p>
+
+            <div class="flex flex-wrap gap-1 font-mono text-[10px] text-zinc-400">
+              <span class="px-2 py-0.5 bg-zinc-900 border border-zinc-800">ESP32</span>
+              <span class="px-2 py-0.5 bg-zinc-900 border border-zinc-800">C++</span>
+              <span class="px-2 py-0.5 bg-zinc-900 border border-zinc-800">Firebase</span>
+              <span class="px-2 py-0.5 bg-zinc-900 border border-zinc-800">Hack Club StarDance (32h)</span>
+            </div>
+          </div>
+
+          <a href="https://github.com/Oriprogram/AutoPot" target="_blank" class="ee-btn w-full py-2 font-mono text-xs text-center text-zinc-300 hover:text-white flex items-center justify-center space-x-1.5">
+            <span>View GitHub Repository</span>
+            <span class="text-zinc-500">↗</span>
+          </a>
+        </article>
+
+        <!-- PROJECT 2: HYDROECOCLEANER -->
+        <article class="ee-card flex flex-col justify-between p-5 space-y-4">
+          <div class="space-y-3">
+            <!-- Image with clean SVG fallback -->
+            <div class="relative w-full aspect-video bg-zinc-900 border border-zinc-800 overflow-hidden flex items-center justify-center">
+              <img 
+                src="hydro-cleaner.jpg" 
+                alt="HydroEcoCleaner Boat" 
+                class="w-full h-full object-cover"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              >
+              <div class="hidden flex-col items-center justify-center text-zinc-600 font-mono text-xs space-y-1">
+                <span>[hydro-cleaner.jpg]</span>
+                <span class="text-[10px] text-zinc-700">Solar Array · EV3 · 4 Motors</span>
+              </div>
+            </div>
+
+            <div class="flex items-start justify-between gap-2 pt-1">
+              <div>
+                <h3 class="text-lg font-medium text-white">HydroEcoCleaner</h3>
+                <p class="text-xs font-mono text-zinc-400">Ocean Cleanup Intercepter inspired project.</p>
+              </div>
+              <span class="text-[10px] font-mono border border-amber-900/60 bg-amber-950/30 text-amber-400 px-1.5 py-0.5">
+                Prototype
+              </span>
+            </div>
+
+            <p class="text-xs text-zinc-400 leading-relaxed">
+              Autonomous cleaning boat built to extract floating debris from water surfaces. Handled all hardware: wired an external solar panel to the central EV3 controller, balanced twin-hull weight distribution, and integrated 4 motors (2 paddle wheels for water propulsion, 2 driving an angled conveyor belt into a removable bin).
+            </p>
+
+            <div class="flex flex-wrap gap-1 font-mono text-[10px] text-zinc-400">
+              <span class="px-2 py-0.5 bg-zinc-900 border border-zinc-800">Solar Wiring</span>
+              <span class="px-2 py-0.5 bg-zinc-900 border border-zinc-800">Lego EV3</span>
+              <span class="px-2 py-0.5 bg-zinc-900 border border-zinc-800">Infomatrix Bronze (210 teams)</span>
+              <span class="px-2 py-0.5 bg-zinc-900 border border-zinc-800">I-smart Gold</span>
+            </div>
+          </div>
+
+          <a href="https://github.com/Oriprogram/HydroEcoCleaner" target="_blank" class="ee-btn w-full py-2 font-mono text-xs text-center text-zinc-300 hover:text-white flex items-center justify-center space-x-1.5">
+            <span>View GitHub Repository</span>
+            <span class="text-zinc-500">↗</span>
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SHORT FILMS -->
+    <section id="films" class="space-y-6">
+      <div class="border-b border-zinc-800 pb-2 flex items-center justify-between">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-zinc-400">// Directing & Film Projects</h2>
+        <span class="text-xs font-mono text-zinc-500">2 Films</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- FILM 1 -->
+        <article class="ee-card flex flex-col justify-between p-5 space-y-4">
+          <div class="space-y-3">
+            <div class="relative w-full aspect-video bg-zinc-900 border border-zinc-800 overflow-hidden flex items-center justify-center">
+              <img 
+                src="film-lyceum.jpg" 
+                alt="Lyceum Short Film" 
+                class="w-full h-full object-cover"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              >
+              <div class="hidden flex-col items-center justify-center text-zinc-600 font-mono text-xs space-y-1">
+                <span>[film-lyceum.jpg]</span>
+                <span class="text-[10px] text-zinc-700">Maarif Competition Winner</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-sm font-medium text-white leading-snug">What is it like to study in a Lyceum?</h3>
+              <p class="text-xs font-mono text-zinc-500 mt-0.5">Lead Director & Actor · 5-Person Crew</p>
+            </div>
+
+            <p class="text-xs text-zinc-400 leading-relaxed">
+              Short film made to showcase everyday student life and boarding school culture at our Lyceum. Winner of the National Maarif Short Film Competition.
+            </p>
+          </div>
+
+          <a href="https://youtu.be/q-q6exVopoU" target="_blank" class="ee-btn w-full py-2 font-mono text-xs text-center text-zinc-300 hover:text-white flex items-center justify-center space-x-1.5">
+            <span>Watch Video (Unlisted on YouTube)</span>
+            <span class="text-zinc-500">↗</span>
+          </a>
+        </article>
+
+        <!-- FILM 2 -->
+        <article class="ee-card flex flex-col justify-between p-5 space-y-4">
+          <div class="space-y-3">
+            <div class="relative w-full aspect-video bg-zinc-900 border border-zinc-800 overflow-hidden flex items-center justify-center">
+              <img 
+                src="film-thecount.jpg" 
+                alt="THE COUNT Short Film" 
+                class="w-full h-full object-cover"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              >
+              <div class="hidden flex-col items-center justify-center text-zinc-600 font-mono text-xs space-y-1">
+                <span>[film-thecount.jpg]</span>
+                <span class="text-[10px] text-zinc-700">SAS 2026 Competition</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-sm font-medium text-white leading-snug">THE COUNT</h3>
+              <p class="text-xs font-mono text-zinc-500 mt-0.5">Lead Director · 10-Person Crew</p>
+            </div>
+
+            <p class="text-xs text-zinc-400 leading-relaxed">
+              Short narrative film created to raise awareness about global food waste. Submitted and presented for the SAS2026 International Zero Waste Competition.
+            </p>
+          </div>
+
+          <a href="https://youtu.be/tj6Yek5EpTY" target="_blank" class="ee-btn w-full py-2 font-mono text-xs text-center text-zinc-300 hover:text-white flex items-center justify-center space-x-1.5">
+            <span>Watch Video (Unlisted on YouTube)</span>
+            <span class="text-zinc-500">↗</span>
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-zinc-900 mt-16 py-8 text-center font-mono text-xs text-zinc-600">
+    <p>Temirlan Azemkulov · <a href="mailto:temirlanprogram@gmail.com" class="text-zinc-400 hover:underline">temirlanprogram@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>
